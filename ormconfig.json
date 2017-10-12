@@ -1,0 +1,19 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "hayet",
+    "password": "lilamahdi",
+    "database": "e-commerce",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "entities/**/*.ts"
+    ],
+    "migrations": [
+        "migration/**/*.ts"
+    ],
+    "subscribers": [
+        "subscriber/**/*.ts"
+    ]
+}
