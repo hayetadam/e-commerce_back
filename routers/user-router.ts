@@ -21,9 +21,9 @@ routerUser.post('/', (req,resp)=> {
 
 routerUser.patch('/', (req,resp)=> {
     db.modifyUser(req.body).then(user => resp.json(user))
-    .catch((error) => resp.status(500).send(error));;
+    .catch((error) => resp.status(500).send(error));
 });
 routerUser.delete('/:id', (req,resp)=> {
-    db.removeUser(req.params.id).then(dog => resp.json(dog))
+    db.removeUser(req.params.id).then(user => resp.json(user))
     .catch((error) => resp.status(500).send(error));;
 });
