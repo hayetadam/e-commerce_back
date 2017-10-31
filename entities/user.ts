@@ -19,7 +19,11 @@ export class User {
 
    @Column()
 
-   email: string;
+   mail: string;
+
+   @Column()
+   
+    mdp: string;
 
    @OneToMany( type => Addresse, addresse => addresse.user)
    addresse: Addresse[];
